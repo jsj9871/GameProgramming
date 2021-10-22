@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html><head><title>주사위 만들기 </title></head>
+<body>
+<h3>주사위</h3>
+<canvas id="myCanvas" style="background-color:aliceblue"
+width="300" height="300"></canvas>
+</body>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+
+    // 파란선으로 사각형 그리기
+context.beginPath();
+context.strokeStyle = "dark"; // 선 색 설정
+context.rect(0, 0, 50, 50);  // (30,30)에서 50x50 크기 사각형을 경로에 삽입
+context.rect(60, 0, 50, 50);
+context.rect(120, 0, 50, 50);
+context.rect(0,60,50,50);
+context.rect(60,60,50,50);
+context.rect(120,60,50,50);
+context.stroke(); // 경로에 있는 모든 도형의 외곽선 그리기
+
+context.fillStyle = "dark";
+context.lineWidth = 0.1;
+context.strokeStyle = "dark";
+//1
+context.beginPath();
+context.arc(25, 25, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+//2
+context.beginPath();
+context.arc(75, 15, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(100, 35, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+//3
+context.beginPath();
+context.arc(130, 15, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(145, 25, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(160, 35, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+
+//4
+context.beginPath();
+context.arc(15, 75, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(35, 75, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(15, 95, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(35, 95, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+//5
+context.beginPath();
+context.arc(70, 70, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(100, 70, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(70, 100, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(100, 100, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.arc(85, 85, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+//6
+context.beginPath();
+context.arc(130, 70, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(160, 70, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(130, 100, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(160, 100, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(130, 85, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+context.beginPath();
+context.arc(160, 85, 5, 5, 10*Math.PI, false);
+context.stroke();
+context.fill();
+
+
+
+
+
+
+
+</script>
